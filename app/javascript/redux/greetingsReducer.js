@@ -2,6 +2,7 @@
 const getData = async () => {
   const response = await fetch('/api/greetings');
   const data = await response.json();
+  console.log(data);
   return data;
 }
 
@@ -11,7 +12,7 @@ const SHOW_GREETINGS = 'redux/greetingsReducer.js/SHOW_GREETINGS'
 // Reducer
 const initialState = [];
 
-export const greeting = (state = initialState, action) => {
+export const greetingsReducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_GREETINGS:
       return action.payload;

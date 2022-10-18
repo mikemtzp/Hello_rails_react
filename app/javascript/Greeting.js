@@ -3,7 +3,7 @@ import React from 'react';
 const Greeting = () => {
   return (
     <div>
-      <h1>Hello!! this is the 'greetin</h1>
+      <h1>Rails and React now working</h1>
     </div>
   );
 };

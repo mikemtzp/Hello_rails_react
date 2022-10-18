@@ -1,9 +1,7 @@
 // Data fetching
 const getData = async () => {
   const response = await fetch('/api/greetings');
-  const data = await response.json();
-  console.log(data);
-  return data;
+  return await response.json();
 }
 
 // Actions
